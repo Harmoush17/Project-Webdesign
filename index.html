@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>COV</title>
 </head>
 
@@ -54,6 +54,7 @@
             </li>
         </ul>
     </nav>
+
     <!-- Name  -->
     <header>
         <div class="name">
@@ -61,6 +62,7 @@
             <h1 class="intro-heading">ACADEMIE BEELDENDE KUNSTEN <span>JAN PORTAELS</span></h1>
         </div>
     </header>
+
     <!-- Cards Activiteiten -->
     <div class="main" id="ACTIVITEITEN">
         <ul class="cards">
@@ -69,7 +71,8 @@
                     <div class="card_image"><img src="photos-demo/acti.jpg"></div>
                     <div class="card_content">
                         <h2 class="card_title">Aankodiginen</h2>
-                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, assumenda?</p>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                            assumenda?</p>
                         <button class="btn card_btn">Meer Lezen</button>
                     </div>
                 </div>
@@ -79,7 +82,8 @@
                     <div class="card_image"><img src="photos-demo/acti.jpg"></div>
                     <div class="card_content">
                         <h2 class="card_title">Expos</h2>
-                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, assumenda?</p>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                            assumenda?</p>
                         <button class="btn card_btn">Meer Lezen</button>
                     </div>
                 </div>
@@ -89,7 +93,8 @@
                     <div class="card_image"><img src="photos-demo/acti.jpg"></div>
                     <div class="card_content">
                         <h2 class="card_title">Excusies</h2>
-                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, assumenda?</p>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                            assumenda?</p>
                         <button class="btn">Meer Lezen</button>
                     </div>
                 </div>
@@ -99,7 +104,8 @@
                     <div class="card_image"><img src="photos-demo/acti.jpg"></div>
                     <div class="card_content">
                         <h2 class="card_title">Evenementen</h2>
-                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, assumenda?</p>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                            assumenda?</p>
                         <button class="btn card_btn">Meer Lezen</button>
                     </div>
                 </div>
@@ -109,7 +115,8 @@
                     <div class="card_image"><img src="photos-demo/acti.jpg"></div>
                     <div class="card_content">
                         <h2 class="card_title">Nieuws</h2>
-                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, assumenda?</p>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                            assumenda?</p>
                         <button class="btn card_btn">Meer Lezen</button>
                     </div>
                 </div>
@@ -119,38 +126,84 @@
                     <div class="card_image"><img src="photos-demo/acti.jpg"></div>
                     <div class="card_content">
                         <h2 class="card_title">Persartikles</h2>
-                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, assumenda?</p>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                            assumenda?</p>
                         <button class="btn card_btn">Meer Lezen</button>
                     </div>
                 </div>
             </li>
         </ul>
     </div>
+
+    <div id="contact" class="contact">
+        <div class="info-container">
+            <h2>CONTACT INFO</h2>
+            <p>Onze Adress : Spiegelstraat 62 – 1800 Vilvoorde</p>
+            <p>Telefoonnummer : 02/251.51.51</p>
+            <p><a href="directie.academiebeeldendekunsten@sovilvoorde.be">De Directie E-mailen</a></p>
+            <p><a href="secretariaat.academiebeeldendekunsten@sovilvoorde.be">De Secretariaat E-mailen</a></p>
+        </div>
+        <div class="form-container">
+            <form action="#">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Uw Naam</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Uw naam is.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Uw E-mail</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Example@gmail.com" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Onderwerp</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px" required></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
     <footer>
-            <div class="row">
-                    <div class="col">
-                        <span class="copyright">Copyright © ACADEMIE JAN PORTAELS</span>
-                    </div>
-                    <div class="col">
-                        <ul class="social-buttons">
-                            <li><a href="#"><i class="fab fa-facebook"></i></a>
-                            </li>
-                            
-                            <li><a href="#"><i class="fab fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul class="quicklinks">
-                            <li><a href="#">Privacy Policy</a>
-                            </li>
-                            <li><a href="#">Terms of Use</a>
-                            </li>
-                        </ul>
-                    </div>
+        <div class="row">
+            <div class="col">
+                <span class="copyright">Copyright © ACADEMIE JAN PORTAELS</span>
             </div>
+            <div class="col">
+                <ul class="social-buttons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="quicklinks">
+                    <li><a href="#">Privacy Policy</a>
+                    </li>
+                    <li><a href="#">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
