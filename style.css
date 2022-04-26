@@ -10,7 +10,7 @@
 
 body {
     background: linear-gradient(#200016, #10001f);
-    height: 100vh;
+    /* height: 100vh; */
     font-family: 'Quicksand', serif;
 }
 
@@ -81,8 +81,11 @@ nav ul li a:hover {
     margin-top: 6px;
 }
 
+section {
+    height: 100vh;
+}
 
-/* Name Design */
+/* Header Design */
 
 header {
     height: 100vh;
@@ -97,7 +100,6 @@ header::after {
     bottom: -38px;
     height: 0.7rem;
     width: 100%;
-    background: black;
     background: linear-gradient(to right, #38030D, #330338);
 }
 
@@ -232,11 +234,11 @@ header h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #8f77a7;
+    background :linear-gradient(to right, #8f77a7, #330338)
 }
 
 .info-container h2 {
-    color: white;
+    color: black;
     margin-bottom: 3.4rem;
     letter-spacing: 1px;
 }
@@ -244,10 +246,14 @@ header h1 {
 .info-container p,
 a {
     padding: 10px;
-    color: #EF8D9C;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+.info-container a {
+    display: block;
 }
 
 .form-container {
@@ -281,27 +287,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #441034;
 }
-
-
-
-/* .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-} */
-
-/* .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-} */
-
-/* Clear floats after the columns */
-/* .row:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -349,17 +334,23 @@ footer a {
     font-weight: 500;
 }
 
-footer ul li {
+footer .quicklinks li {
     display: inline-block;
     padding: 1rem;
+}
+
+footer .social-buttons li {
+    display: inline-block;
 }
 
 footer ul li i {
     color: white;
     font-size: 2rem;
+    padding-right: 2px ;
 }
 
 footer ul li i:hover,
 .quicklinks a:hover {
     color: #EF8D9C;
 }
+
