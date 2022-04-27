@@ -30,8 +30,21 @@ nav a {
     color: white;
 }
 
-nav .logo {
-    font-size: 2.1rem;
+nav .logo a {
+    font-size: 3rem; 
+    letter-spacing: .3rem;
+}
+
+nav .logo::first-letter {
+    color: green;
+}
+
+nav .logo a .o {
+    color: blue;
+}
+
+nav .logo a .v {
+    color: red;
 }
 
 nav ul {
