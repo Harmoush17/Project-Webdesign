@@ -14,4 +14,4 @@ navLinks.forEach((navLink) =>{
 })
 
 
-// document.addEventListener('mouseenter', function())
+// document.addEventListener('mouseenter', function() {})

@@ -34,20 +34,22 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin: 1.9rem auto;
+    height: auto;
+    /* position: fixed; */
 }
 
 nav #mobile-menu {
-    color: #ccc;
+    color: var(--sugar);
     font-size: 2rem;
     display: none;
     cursor: pointer;
 }
 
 nav #mobile-menu:hover {
-    color: #8f77a7;
+    color: var(--white);
 }
 
 nav .logo a {
@@ -79,11 +81,14 @@ nav ul li a {
     border-radius: 20px;
     letter-spacing: 1px;
     color: var(--white);
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition:box-shadow 2s ease-in-out;
 }
 
 nav ul li a:hover {
-    background-color: #fff;
-    color: #200016;
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: inset 200px 0 0 0 var(--light-green);
 }
 
 .dropdown-content {
@@ -91,22 +96,23 @@ nav ul li a:hover {
     position: absolute;
     background: linear-gradient(to left, var(--dark-blue), var(--light-green));
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 1, 0.2);
+    box-shadow: 0px 4px 8px 0px var(--gray);
     z-index: 1;
     border-radius: 20px;
 }
 
 .dropdown-content a {
-    color: white;
+    display: block;
+    color: var(--white);
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
     text-align: left;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
     margin-top: 6px;
+    
 }
 
 
@@ -127,6 +133,10 @@ nav ul li a:hover {
 } */
 
 @media screen and (max-width: 960px) {
+
+    nav {
+        justify-content: space-between;
+    }
 
     nav ul {
         display: grid;
@@ -153,6 +163,8 @@ nav ul li a:hover {
 
 @media screen and (max-width: 640px) {
 
+    
+
     /* Navigation  */
 
     nav ul {
@@ -164,10 +176,14 @@ nav ul li a:hover {
         height: auto;
         top: 12vh;
         left: 0;
-        background-color: #330338;
-        padding: 10px;
+        background-color: var(--dark-blue);
+        padding: 10px 2px;
         z-index: 999;
         padding-bottom: 30px;
+    }
+    
+    nav ul.appear {
+        display: none;
     }
 
     nav #mobile-menu {
@@ -178,23 +194,20 @@ nav ul li a:hover {
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: linear;
+        background: var(--light-green) ;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 1, 1, .5);
+        box-shadow: 0px 4px 8px 0px var(--gray);
         z-index: 1;
         border-radius: 20px;
     }
 
     .dropdown-content a {
         font-size: 1rem;
+        margin: 0;
     }
     
     .dropdown:hover .dropdown-content {
         display: inline-block;
-    }
-
-    nav ul.appear {
-        display: none;
     }
 
     /* Header  */
@@ -273,7 +286,7 @@ header {
 header div div {
     height: 300px;
     width: 70%;
-    background-image: url('photos-demo/sov.png');
+    background-image: url('photos-demo/ex.PNG');
     background-size: cover;
     background-position: center;
 }
@@ -285,15 +298,16 @@ header .name {
     animation: 5s ease-out 0s 1 slideInFromLeft;
 }
 
-@keyframes slideInFromLeft {
+/* @keyframes slideInFromLeft {
     0% {
-        transform: translateX(-100%);
+        transform: translateY(100%);
+        opacity: 0;
     }
 
     100% {
-        transform: translateX(0);
-    }
-}
+        transform: translateY(0);
+        opacity: 1;    }
+} */
 
 header h1 {
     color: var(--white);
@@ -305,7 +319,7 @@ header h1 {
 /* Card Design */
 
 .main {
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin: 2rem;
 }
 
