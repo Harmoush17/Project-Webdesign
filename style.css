@@ -88,7 +88,11 @@ nav ul li a {
 nav ul li a:hover {
     background-color: var(--white);
     color: var(--black);
-    box-shadow: inset 200px 0 0 0 var(--light-green);
+    box-shadow: inset 224px 0 0 0 var(--light-green);
+}
+
+.dropdown i {
+    font-size: .8rem;
 }
 
 .dropdown-content {
@@ -326,9 +330,15 @@ header h1 {
     text-align: center;
 }
 
+/* SCHRIJF-IN */
+
+.schrijf-in {
+    display: none;
+    height: 100vh;
+}
 
 
-/* Card Design */
+/* Card Design activiteiten */
 
 .main {
     /* max-width: 1400px; */
@@ -437,7 +447,7 @@ header h1 {
     font-weight: 400;
 }
 
-/* Form Contact  */
+/*  Contact  */
 
 .contact {
     display: flex;
