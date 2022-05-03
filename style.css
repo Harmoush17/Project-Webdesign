@@ -4,8 +4,8 @@
     --white: #ffffff;
     --dark-blue: #002333;
     --gray: #B4BEC9;
-    --light-green: #159A9C ;
-    --sugar: #DEEFE7 ;
+    --light-green: #159A9C;
+    --sugar: #DEEFE7;
     --black: #000;
 }
 
@@ -38,7 +38,6 @@ nav {
     align-items: center;
     margin: 1.9rem auto;
     height: auto;
-    /* position: fixed; */
 }
 
 nav #mobile-menu {
@@ -53,7 +52,7 @@ nav #mobile-menu:hover {
 }
 
 nav .logo a {
-    font-size: 3rem; 
+    font-size: 3rem;
     letter-spacing: .3rem;
     margin-left: 1.4rem;
     color: var(--gray);
@@ -66,6 +65,7 @@ nav ul {
     align-items: center;
     list-style: none;
     padding: 20px 0;
+
 }
 
 nav ul li {
@@ -82,7 +82,7 @@ nav ul li a {
     letter-spacing: 1px;
     color: var(--white);
     box-shadow: inset 0 0 0 0 #54b3d6;
-    transition:box-shadow 2s ease-in-out;
+    transition: box-shadow 2s ease-in-out;
 }
 
 nav ul li a:hover {
@@ -96,7 +96,7 @@ nav ul li a:hover {
     position: absolute;
     background: linear-gradient(to left, var(--dark-blue), var(--light-green));
     min-width: 160px;
-    box-shadow: 0px 4px 8px 0px var(--gray);
+    /* box-shadow: 0px 4px 8px 0px var(--gray); */
     z-index: 1;
     border-radius: 20px;
 }
@@ -112,7 +112,6 @@ nav ul li a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
     margin-top: 6px;
-    
 }
 
 
@@ -142,8 +141,9 @@ nav ul li a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     nav ul li {
-        padding-top: 20px ;
+        padding-top: 20px;
     }
 
     .form-container form {
@@ -163,40 +163,45 @@ nav ul li a:hover {
 
 @media screen and (max-width: 640px) {
 
-    
-
     /* Navigation  */
 
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        position: absolute;
-        width: 100%;
-        height: auto;
-        top: 12vh;
-        left: 0;
-        background-color: var(--dark-blue);
-        padding: 10px 2px;
-        z-index: 999;
-        padding-bottom: 30px;
-    }
-    
     nav ul.appear {
         display: none;
     }
 
     nav #mobile-menu {
-        display: block;
-        margin: 2rem ;
+        display: initial;
+        margin: 2rem;
+    }
+
+    nav .nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        right: 0;
+        background-color: var(--dark-blue);
+        padding: 10px 2px;
+        z-index: 999;
+        padding-bottom: 0px;
+    }
+    
+    nav .nav-items li {
+        width: 100%;
+        border-bottom: 1px solid var(--light-green);
     }
 
     .dropdown-content {
         display: none;
-        position: absolute;
-        background: var(--light-green) ;
-        min-width: 160px;
-        box-shadow: 0px 4px 8px 0px var(--gray);
+        position: relative;
+        left: 0;
+        background: var(--dark-blue);
+        /* width: 160px; */
+        width: 100%;
         z-index: 1;
         border-radius: 20px;
     }
@@ -204,8 +209,15 @@ nav ul li a:hover {
     .dropdown-content a {
         font-size: 1rem;
         margin: 0;
+        transition: none;
     }
-    
+
+    .dropdown-content a:hover {
+        box-shadow: none;
+        background-color: var(--light-green);
+        color: var(--black);
+    }
+
     .dropdown:hover .dropdown-content {
         display: inline-block;
     }
@@ -251,10 +263,10 @@ nav ul li a:hover {
         text-align: center;
     }
 
-    .info-container p , a {
+    .info-container p, a {
         margin-left: 2rem;
     }
-    
+
     /* Footer */
 
     footer .row {
@@ -497,7 +509,7 @@ input[type=submit]:hover {
 footer {
     height: auto;
     color: var(--white);
-    margin: 5rem 0 2rem 0 ;
+    margin: 5rem 0 2rem 0;
 }
 
 footer .row {
@@ -534,11 +546,10 @@ footer .social-buttons li {
 
 footer ul li i {
     font-size: 2rem;
-    padding-right: 2px ;
+    padding-right: 2px;
 }
 
 footer ul li i:hover,
 .quicklinks a:hover {
     color: var(--gray);
 }
-
