@@ -119,22 +119,6 @@ nav ul li a:hover {
 }
 
 
-
-
-
-/* @media screen and (max-width: 1230px) {
-
-    nav ul {
-            display: flex;
-            flex-wrap: wrap;
-        overflow: hidden;
-    }
-
-    nav ul li {
-        padding-top: 4px ;
-    }
-} */
-
 @media screen and (max-width: 960px) {
 
     nav {
@@ -286,10 +270,6 @@ nav ul li a:hover {
 
 
 
-
-
-
-
 /* Header Design */
 
 header {
@@ -330,18 +310,22 @@ header h1 {
     text-align: center;
 }
 
-/* SCHRIJF-IN */
 
-.schrijf-in {
-    display: none;
-    height: 100vh;
-}
+
+/* Portfolio */
+
+
+
+
+
+
+
+
 
 
 /* Card Design activiteiten */
 
 .main {
-    /* max-width: 1400px; */
     margin: 2rem;
 }
 
@@ -356,7 +340,6 @@ header h1 {
 }
 
 .card img {
-    height: auto;
     margin: 0;
     max-width: 100%;
     vertical-align: middle;
@@ -412,7 +395,7 @@ header h1 {
 .card {
     background-color: white;
     border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 20px 40px -14px var(--gray);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -446,6 +429,17 @@ header h1 {
     margin-bottom: 1.25rem;
     font-weight: 400;
 }
+
+
+
+/* SCHRIJF-IN */
+
+.schrijf-in {
+    min-height: 100vh;
+}
+
+
+
 
 /*  Contact  */
 
