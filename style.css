@@ -39,6 +39,13 @@ nav {
     align-items: center;
     margin: 1.9rem auto;
     height: auto;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to bottom right, var(--dark-blue), var(--light-green));
+    /* border: 2px solid var(--gray); */
+    border-radius: 40px;
+    width: fit-content;
+    z-index: 1;
 }
 
 nav #mobile-menu {
@@ -123,6 +130,7 @@ nav ul li a:hover {
 
     nav {
         justify-content: space-between;
+        width: auto;
     }
 
     nav ul {
@@ -152,6 +160,10 @@ nav ul li a:hover {
 @media screen and (max-width: 640px) {
 
     /* Navigation  */
+
+    nav {
+        width: auto;
+    }
 
     nav ul.appear {
         display: none;
@@ -229,6 +241,14 @@ nav ul li a:hover {
         display: flex;
         justify-content: center;
     }
+    
+    
+    /* Section Video */
+    iframe, .video-container .video-1 {
+        max-width: 100%;
+        
+    }
+
 
     /* contact Form */
 
@@ -284,6 +304,7 @@ header .name {
     justify-content: space-evenly;
     flex-direction: column;
     animation: slideInFromLeft 3s ease-out 0s 1 ;
+    /* position: absolute; */
 }
 
 @keyframes slideInFromLeft {
@@ -305,6 +326,7 @@ header h1 {
 
 header .foto {
     animation: slideInFromRight 3s ease-out 0s 1 ;
+    /* position: fixed; */
 }
 
 @keyframes slideInFromRight {
@@ -371,12 +393,23 @@ header .two:hover {
     background: linear-gradient(to left, var(--black), var(--dark-blue));
 }
 
+
 /* Video */
 
-.video-container .video-1 {
-    width: 640px;
-    height: 360px;
+
+.video-container {
+    margin-top: 20rem;
 }
+
+.video-container div {
+    margin: 2rem 0;
+}
+
+iframe, .video-container .video-1 {
+    width: 853px;
+    height: 480px;
+}
+
 
 
 
@@ -394,6 +427,7 @@ header .two:hover {
 
 
 /* Card Design activiteiten */
+
 
 .main {
     margin: 2rem;
