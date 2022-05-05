@@ -277,19 +277,18 @@ header {
     display: flex;
     justify-content: space-evenly;
     margin: 2rem 0rem 10rem;
-    /* transition: all 8s; */
 }
 
 header .name {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    animation: 5s ease-out 0s 1 slideInFromLeft;
+    animation: slideInFromLeft 3s ease-out 0s 1 ;
 }
 
 @keyframes slideInFromLeft {
     0% {
-        transform: translateX(100%);
+        transform: translateX(-100%);
         opacity: 0;
     }
 
@@ -302,6 +301,23 @@ header h1 {
     color: var(--dark-gray);
     text-align: center;
     margin: 5px auto;
+}
+
+header .foto {
+    animation: slideInFromRight 3s ease-out 0s 1 ;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translate(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+    
 }
 
 header div .img-logo {
@@ -355,7 +371,12 @@ header .two:hover {
     background: linear-gradient(to left, var(--black), var(--dark-blue));
 }
 
+/* Video */
 
+.video-container .video-1 {
+    width: 640px;
+    height: 360px;
+}
 
 
 
