@@ -7,6 +7,7 @@
     --light-green: #159A9C;
     --sugar: #DEEFE7;
     --black: #000;
+    --dark-gray: #989e9c;
 }
 
 
@@ -100,7 +101,6 @@ nav ul li a:hover {
     position: absolute;
     background: linear-gradient(to left, var(--dark-blue), var(--light-green));
     min-width: 160px;
-    /* box-shadow: 0px 4px 8px 0px var(--gray); */
     z-index: 1;
     border-radius: 20px;
 }
@@ -277,14 +277,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     margin: 2rem 0rem 10rem;
-}
-
-header div div {
-    height: 300px;
-    width: 70%;
-    background-image: url('photos-demo/ex.PNG');
-    background-size: cover;
-    background-position: center;
+    /* transition: all 8s; */
 }
 
 header .name {
@@ -294,21 +287,77 @@ header .name {
     animation: 5s ease-out 0s 1 slideInFromLeft;
 }
 
-/* @keyframes slideInFromLeft {
+@keyframes slideInFromLeft {
     0% {
-        transform: translateY(100%);
+        transform: translateX(100%);
         opacity: 0;
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;    }
-} */
+}
 
 header h1 {
-    color: var(--white);
+    color: var(--dark-gray);
     text-align: center;
+    margin: 5px auto;
 }
+
+header div .img-logo {
+    height: 300px;
+    width: 100%;
+    background-image: url('photos-demo/ex.PNG');
+    background-size: cover;
+    background-position: center;
+    margin: 10px auto;
+}
+
+header .keys-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+header .keys-container .keys-1, .keys-2 {
+    margin: 5px auto;
+}
+
+header .keys-container .keys-1 .key{
+    display: inline-block;
+    padding: 9px;
+    border-radius: 10px;
+    margin: 10px ;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--white);
+    box-shadow: 10px 17px 15px  var(--dark-blue );
+}   
+
+header .keys-container .keys-2 .key {
+    display: inline-block;
+    padding: 7px;
+    border-radius: 10px ;
+    margin: 5px ;
+    font-weight: 550;
+    font-size: 2rem;
+    color: var(--sugar);
+    box-shadow: 5px 17px 15px #1a263b;
+}
+
+header .one:hover {
+    transform: rotate(20deg) scale(1.2);
+    background: linear-gradient(to right, var(--black), var(--dark-blue));
+}
+
+header .two:hover {
+    transform: rotate(-20deg) scale(1.2);
+    background: linear-gradient(to left, var(--black), var(--dark-blue));
+}
+
+
+
+
 
 
 
@@ -395,7 +444,7 @@ header h1 {
 .card {
     background-color: white;
     border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px var(--gray);
+    box-shadow: 40px 20px 40px -14px var(--gray);
     display: flex;
     flex-direction: column;
     overflow: hidden;
