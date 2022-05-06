@@ -9,13 +9,18 @@
     <title>COV</title>
 </head>
 <body>
-    <nav class="top-nav">
-        <h2 class="logo">
-            <a href="../index.html" title="ACADEMIE JAN PORTAELS">COV</a>
-        </h2>
-        <ul>
+    <nav id="top-nav">
+        <h2 class="logo"><a href="#top-nav" title="ACADEMIE JAN PORTAELS">SOV</a></h2>
+
+        <i id="mobile-menu" class="fa-solid fa-bars-staggered"></i>
+
+        <ul class="nav-items appear">
+
             <li class="dropdown">
-                <a href="#">ACTIVITEITEN</a>
+                <a href="pages/activiteiten.html" class="nav-links">
+                    ACTIVITEITEN
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
                 <div class="dropdown-content">
                     <a href="#Aankodiginen">Aankodiginen</a>
                     <a href="#Expos">Expos</a>
@@ -25,52 +30,66 @@
                     <a href="#Persartikles">Persartikles</a>
                 </div>
             </li>
-            <li>
-                <a href="#">GOED OM WETEN</a>
-            </li>
-            
+
             <li class="dropdown">
-                <a href="kunst.html">KUNSTTHEORIE</a>
+                <a href="pages/kunst.html" class="nav-links">
+                    KUNSTTHEORIE
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
                 <div class="dropdown-content">
                     <a href="#">Beeldende Cultuur</a>
                     <a href="#">Cultuurfilosofie</a>
                 </div>
             </li>
+
             <li class="dropdown">
-                <a href="ateliers.html">ATELIERS</a>
+                <a href="pages/ateliers.html" class="nav-links">
+                    ATELIERS
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
                 <div class="dropdown-content">
                     <a href="#">Kinderen</a>
                     <a href="#">Jongeren</a>
                     <a href="#">Volwassenen</a>
                 </div>
             </li>
+
             <li>
-                <a href="#">SCHRIJF IN</a>
+                <a href="#" class="nav-links">GOED OM TE WETEN</a>
             </li>
+
             <li>
-                <a href="#">CONTACT</a>
+                <a href="#schrijf-in" class="nav-links">SCHRIJF IN</a>
+            </li>
+
+            <li>
+                <a href="#contact" class="nav-links">CONTACT</a>
             </li>
         </ul>
     </nav>
-    <section class="vh"> 
 
-    </section>
+    <!-- <section class="vh"> 
+
+    </section> -->
     <div class="main" id="ACTIVITEITEN">
+        <h1>ACTIVITEITEN</h1>
         <ul class="cards">
+
             <li class="cards_item">
                 <div class="card" id="Aankodiginen">
-                    <div class="card_image"><img src="../photos-demo/acti.jpg"></div>
+                    <div class="card_image"><img src="../photos-demo/image-1.jpg" alt="PHOTO"></div>
                     <div class="card_content">
                         <h2 class="card_title">Aankodiginen</h2>
-                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-                            assumenda?</p>
+                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequatur, assumenda?</p>
                         <button class="btn card_btn">Meer Lezen</button>
                     </div>
                 </div>
             </li>
+
             <li class="cards_item">
                 <div class="card" id="Expos">
-                    <div class="card_image"><img src="../photos-demo/acti.jpg"></div>
+                    <div class="card_image"><img src="../photos-demo/img-2.PNG" alt="PHOTO"></div>
                     <div class="card_content">
                         <h2 class="card_title">Expos</h2>
                         <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
@@ -79,9 +98,10 @@
                     </div>
                 </div>
             </li>
+
             <li class="cards_item">
                 <div class="card" id="Excusies">
-                    <div class="card_image"><img src="../photos-demo/acti.jpg"></div>
+                    <div class="card_image"><img src="../photos-demo/img-3.PNG" alt="PHOTO"></div>
                     <div class="card_content">
                         <h2 class="card_title">Excusies</h2>
                         <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
@@ -90,9 +110,10 @@
                     </div>
                 </div>
             </li>
+
             <li class="cards_item">
                 <div class="card" id="Evenementen">
-                    <div class="card_image"><img src="../photos-demo/acti.jpg"></div>
+                    <div class="card_image"><img src="../photos-demo/image-4.png" alt="PHOTO"></div>
                     <div class="card_content">
                         <h2 class="card_title">Evenementen</h2>
                         <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
@@ -101,9 +122,10 @@
                     </div>
                 </div>
             </li>
+
             <li class="cards_item">
                 <div class="card" id="Nieuws">
-                    <div class="card_image"><img src="../photos-demo/acti.jpg"></div>
+                    <div class="card_image"><img src="../photos-demo//image-5.png" alt="PHOTO"></div>
                     <div class="card_content">
                         <h2 class="card_title">Nieuws</h2>
                         <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
@@ -112,9 +134,10 @@
                     </div>
                 </div>
             </li>
+
             <li class="cards_item">
                 <div class="card" id="Persartikles">
-                    <div class="card_image"><img src="../photos-demo/acti.jpg"></div>
+                    <div class="card_image"><img src="../photos-demo/image-6.jpeg" alt="PHOTO"></div>
                     <div class="card_content">
                         <h2 class="card_title">Persartikles</h2>
                         <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,

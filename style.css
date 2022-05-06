@@ -40,7 +40,7 @@ nav {
     align-items: center;
     margin: 1.9rem auto;
     height: auto;
-    /* position: sticky; */
+    position: sticky;
     top: 0;
     background: linear-gradient(to bottom left, var(--dark-blue) 33%, var(--light-green) 100%);
     border-radius: 40px;
