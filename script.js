@@ -31,5 +31,5 @@ function animate() {
   }
   
   window.addEventListener("scroll", animate);    
-  
+
 

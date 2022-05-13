@@ -157,7 +157,7 @@ nav ul li a:hover {
 
 @media screen and (max-width: 640px) {
 
-    /* Navigation  */
+    /* Navigation  640 */
 
     nav {
         width: auto;
@@ -220,7 +220,7 @@ nav ul li a:hover {
         display: inline-block;
     }
 
-    /* Header  */
+    /* Header  640*/
 
     header {
         flex-direction: column;
@@ -241,7 +241,7 @@ nav ul li a:hover {
     }
 
 
-    /* Section Video */
+    /* Section Video 640*/
 
 
     iframe {
@@ -285,45 +285,14 @@ nav ul li a:hover {
         display: none;
     }
 
-    /* Section Schrijf-in */
+    /* Section Schrijf-in 640 */
 
-    /* .schrijf-in {
-        height: 80vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .schrijf-in {
+        min-height: 80vh;
+        /* width: 100%; */
     }
 
-    .parent {
-        width: 10rem;
-        height: 11rem;
-        background-color: black;
-        position: relative;
-        
-    }
-
-    .child {
-        width: 3rem;
-        height: 3rem;
-        background-color: red;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin: 0;
-    }
-
-    .child-2 {
-        width: 3rem;
-        height: 3rem;
-        background-color: red;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: 0;
-    } */
-
-    /* contact Form */
+    /* contact Form 640 */
 
     .contact {
         flex-direction: column;
@@ -348,7 +317,7 @@ nav ul li a:hover {
         margin-left: 2rem;
     }
 
-    /* Footer */
+    /* Footer 640 */
 
     footer .row {
         flex-direction: column;
@@ -622,10 +591,59 @@ iframe, .videos-container .video-1 {
 
 .schrijf-in {
     min-height: 100vh;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.front {
+    background-color: var(--light-green);
+    border-radius: .5rem;
+    padding: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.divs-cont {
+    padding: .7rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    gap: .25em;
+}
+
+.divs-cont label {
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--black);
+}
+
+.form-group > input {
+    border: 1px solid #333;
+    border-radius: .25em;
+    font-size: 1rem;
+    padding: .25em;
+}
+
+.geslacht label {
+    color: var(--sugar);
+}
+
+.divs-cont span {
+    margin-bottom: .5rem;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.divs-cont .button {
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 /*  Contact  */
