@@ -288,8 +288,18 @@ nav ul li a:hover {
     /* Section Schrijf-in 640 */
 
     .schrijf-in {
-        min-height: 80vh;
-        /* width: 100%; */
+        min-height: 100vh;
+        display: inline;
+    }
+
+    .front {
+        background-color: var(--light-green);
+        border-radius: .5rem;
+        padding: 1rem;
+        width: 400px;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
     }
 
     /* contact Form 640 */
@@ -589,6 +599,7 @@ iframe, .videos-container .video-1 {
 
 /* SCHRIJF-IN */
 
+
 .schrijf-in {
     min-height: 100vh;
     display: flex;
@@ -596,16 +607,11 @@ iframe, .videos-container .video-1 {
     align-items: center;
 }
 
-.step-form {
-    width: 800px;
-}
-
 .front {
     background-color: var(--light-green);
     border-radius: .5rem;
     padding: 1rem;
-    min-width: 600px;
-    height: auto;
+    width: 800px;
     margin: 0 auto  ;
     display: flex;
     justify-content: space-evenly;
@@ -673,20 +679,23 @@ iframe, .videos-container .video-1 {
 
 
 @media screen and (max-width: 640px) {
+
+    /* SCHRIJF-IN */
+    .schrijf-in {
+        min-height: 100vh;
+        display: inline;
+    }
+
     .front {
         background-color: var(--light-green);
         border-radius: .5rem;
         padding: 1rem;
-        height: auto;
+        width: 400px;
         margin-left: 30px;
         display: flex;
         flex-direction: column;
     }
     
-    .step-form {
-        max-width: 400px;
-    
-    }
 }
 
 
@@ -888,17 +897,34 @@ footer ul li i:hover,
 }
 
 .kinderen {
-    min-height: 100vh;
-    padding: 10px ;
+    min-height: 80vh;
+    padding: 10px;
 }
 
-.kinderen > div {
+.jongeren {
+    padding: 10px;
+    min-height: 80vh;
+}
+
+@media screen and (max-width: 640px) {
+
+    .kinderen > div,
+    .jongeren > div {
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+}
+
+.kinderen > div,
+.jongeren > div {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
-.kinderen img, p {
+.kinderen img, p,
+.jongeren video, p{
     color: var(--sugar);
     font-size: 23px;
     max-width: 720px;
@@ -906,11 +932,24 @@ footer ul li i:hover,
     padding: 20px;
 }
 
-.jongeren {
-    padding: 10px ;
-    min-height: 100vh;
+.kinderen .kind-p {
+    animation: slideLeft 3s ease-out 0s 1;
 }
 
+.kinderen img {
+    animation: slideRight 3s ease-out 0s 1;
+}
+
+.jongeren .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jongeren h2 {
+    color: var(--white);
+    /* align-items: center; */
+}
 
 .volwassenen {
     margin: 2rem;
