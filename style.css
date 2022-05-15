@@ -596,12 +596,17 @@ iframe, .videos-container .video-1 {
     align-items: center;
 }
 
+.step-form {
+    width: 800px;
+}
+
 .front {
     background-color: var(--light-green);
     border-radius: .5rem;
     padding: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
+    min-width: 600px;
+    height: auto;
+    margin: 0 auto  ;
     display: flex;
     justify-content: space-evenly;
 }
@@ -621,6 +626,7 @@ iframe, .videos-container .video-1 {
     font-weight: 600;
     font-size: 1em;
     color: var(--black);
+    margin-top: .5rem;
 }
 
 .form-group > input {
@@ -628,6 +634,12 @@ iframe, .videos-container .video-1 {
     border-radius: .25em;
     font-size: 1rem;
     padding: .25em;
+    margin-top: 1rem;
+}
+
+.geslacht-group div {
+    display: inline-block;
+    margin: 9px;
 }
 
 .geslacht label {
@@ -638,12 +650,45 @@ iframe, .videos-container .video-1 {
     margin-bottom: .5rem;
     color: var(--black);
     font-weight: 600;
+    display: block;
 }
 
 .divs-cont .button {
+    margin: 3px auto;
+    font-size: larger;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
 }
+
+.divs-cont .button:hover {
+    background-color: var(--sugar);
+    color: var(--black);
+}
+
+
+@media screen and (max-width: 640px) {
+    .front {
+        background-color: var(--light-green);
+        border-radius: .5rem;
+        padding: 1rem;
+        height: auto;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .step-form {
+        max-width: 400px;
+    
+    }
+}
+
 
 
 /*  Contact  */
