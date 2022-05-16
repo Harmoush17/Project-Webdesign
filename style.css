@@ -345,10 +345,15 @@ nav ul li a:hover {
 /* Header Design */
 
 header {
-    min-height: auto;
     display: flex;
     justify-content: space-evenly;
     margin: 2rem 0rem 10rem;
+}
+
+header h1 {
+    color: var(--dark-gray);
+    text-align: center;
+    margin: 5px auto;
 }
 
 header .name {
@@ -358,25 +363,15 @@ header .name {
     animation: slideLeft 3s ease-out 0s 1;
 }
 
-header h1 {
-    color: var(--dark-gray);
-    text-align: center;
-    margin: 5px auto;
-}
-
 header .foto {
     animation: slideRight 3s ease-out 0s 1;
 }
 
-
-
-header div .img-logo {
+header .name img {
     height: 300px;
-    width: 100%;
-    background-image: url('photos-demo/so.PNG');
-    background-size: cover;
-    background-position: center bottom;
-    margin: 10px auto;
+    border-radius: 51%;
+    margin: 22px auto;
+    display: block;
 }
 
 header .keys-container {
@@ -420,6 +415,10 @@ header .two:hover {
     transform: rotate(-20deg) scale(1.2);
     background: linear-gradient(to left, var(--black), var(--dark-blue));
 }
+
+/* PHOTOS */
+
+
 
 
 /* Video */
