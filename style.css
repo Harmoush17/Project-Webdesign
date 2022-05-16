@@ -373,9 +373,9 @@ header .foto {
 header div .img-logo {
     height: 300px;
     width: 100%;
-    background-image: url('photos-demo/ex.PNG');
+    background-image: url('photos-demo/so.PNG');
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     margin: 10px auto;
 }
 
@@ -494,12 +494,13 @@ iframe, .videos-container .video-1 {
     margin: 2rem;
 }
 
-.main h1 {
+.main h1,
+.schrijf-in h1 {
     font-size: 24px;
     font-weight: 700;
     text-align: center;
     color: var(--white);
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
     text-decoration: underline;
     text-underline-position: under;
 }
@@ -687,17 +688,12 @@ iframe, .videos-container .video-1 {
     }
 
     .front {
-        background-color: var(--light-green);
-        border-radius: .5rem;
-        padding: 1rem;
         width: 400px;
-        margin-left: 30px;
+        margin-left: 60px;
         display: flex;
         flex-direction: column;
     }
-    
 }
-
 
 
 /*  Contact  */
@@ -726,10 +722,10 @@ a {
 }
 
 .info-container p a {
-    padding: 15px 0 0 0;
+    padding: 15px 0 0 7px;
 }
 
-.info-container a {
+.info-container > a {
     display: block;
 }
 
