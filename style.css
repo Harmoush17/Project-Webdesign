@@ -204,7 +204,44 @@ header .two:hover {
     background: linear-gradient(to left, var(--black), var(--dark-blue));
 }
 
-/* PHOTOS */
+/* PHOTOS MAIN GRID */
+
+article {
+    height: 80vh;
+    margin: 2rem auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 17%);
+    gap: 1rem;
+}
+
+.grid-child.one {
+    grid-row: 1 / span 2;
+}
+
+.grid-child.two {
+    grid-column: span 1;
+}
+
+.grid-child.three {
+    grid-column: 4 ;
+}
+
+.grid-child.four {
+    grid-column: 2 / span 3;
+}
+
+.grid-child.five {
+    grid-column-start: 5;
+    grid-row:1 /span 2;
+}
+
+.grid-child {
+    font-size: 1.4rem;
+    color: var(--white);
+    background-color: #54b3d6;
+    overflow: hidden;
+}
 
 
 
@@ -284,7 +321,7 @@ iframe, .videos-container .video-1 {
 .btn {
     color: var(--white);
     padding: 0.8rem;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
     border-radius: 4px;
     font-weight: 400;
