@@ -24,9 +24,6 @@ body {
     overflow-x: hidden;
 }
 
-.vh {
-    min-height: 100vh;
-}
 
 
 
@@ -709,6 +706,7 @@ footer ul li i:hover,
     text-align: center;
     text-decoration: underline;
     text-underline-position: under;
+    color: var(--white);
 }
 
 .kinderen {
@@ -992,7 +990,6 @@ footer ul li i:hover,
         position: relative;
         left: 0;
         background: var(--dark-blue);
-        /* width: 160px; */
         width: 100%;
         z-index: 1;
         border-radius: 20px;
