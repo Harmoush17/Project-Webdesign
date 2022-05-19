@@ -359,6 +359,7 @@ iframe, .videos-container .video-1 {
     border-radius: 4px;
     font-weight: 400;
     display: block;
+    text-align: center;
     width: 100%;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -776,6 +777,10 @@ footer ul li i:hover,
     .grid-child:hover .replacement.intro {
         display: none;
     }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
 
     nav ul {
         display: grid;
@@ -836,12 +841,48 @@ footer ul li i:hover,
 
     nav ul.appear {
         display: none;
-        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: 1fr 1fr; */
+    }
+
+    nav .nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        right: 0;
+        background-color: var(--dark-blue);
+        padding: 10px 2px;
+        z-index: 999;
+        padding-bottom: 0px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: inline-block;
     }
 
     nav ul li {
         padding-top: 20px;
     }
+
+    nav .nav-items li {
+        width: 100%;
+        border-bottom: 1px solid var(--light-green);
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        left: 0;
+        background: var(--dark-blue);
+        width: 100%;
+        z-index: 1;
+        border-radius: 20px;
+    }
+
     nav #mobile-menu {
         display: initial;
         margin: 2rem;
@@ -1107,15 +1148,12 @@ footer ul li i:hover,
 
     .info-container {
         margin-bottom: 3rem;
+        margin-left: 10px;
     }
 
     .info-container h2 {
         margin-top: 12px;
         text-align: center;
-    }
-
-    .info-container p, a {
-        margin-left: 2rem;
     }
 
     /* Footer 640 */
